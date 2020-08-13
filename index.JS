@@ -10,36 +10,32 @@ alert (suma)
 let frase = prompt ("Escribe aquí una frase")
 
 const gritar = (fraseDelUsuario) => {
-return "¡" + (frase) + "!" 
+return "¡" + (fraseDelUsuario) + "!" 
 }
 
-let gritando = gritar (frase)
+let gritando= gritar (frase)
+
 alert (gritando)
 
 //SEPTIMO EJERCICIO
 let nombre = prompt ("Escribe aquí su nombre")
 let apellido = prompt ("Escriba aquí su apellido")
 
-const obtenerLosNombresCompletos= () => {
-return (nombre + " " + apellido)
+const obtenerLosNombresCompletos= (nombreDelUsuario, apellidoDelUsuario) => {
+return (nombreDelUsuario + " " + apellidoDelUsuario)
 }
 
-let nombres = obtenerLosNombresCompletos (nombre, apellido)
+let nombres= obtenerLosNombresCompletos (nombre, apellido)
 alert (nombres)
 //OCTAVO EJERCICIO
 
-const paraSaludar= () => {
-    return "Hola" + " " + (nombres) + " " + "¿Cómo estás?" 
+const paraSaludar= (nombreDelUsuario) => {
+    return "Hola" + " " + (nombreDelUsuario) + " " + "¿Cómo estás?" 
 }
 
 let saludando = paraSaludar (nombres)
 alert (saludando)
 
 //NOVENO EJERCICIO
-
-const saludarGritando = (gritar, saludar) => {
-    return (gritando) + (saludando)
-}
-
-let saludoGriton = saludarGritando (gritando, saludando)
-alert (saludoGriton)
+let vamosAngelTupuedes= gritar (saludando)
+alert (vamosAngelTupuedes)
