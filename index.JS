@@ -1,6 +1,9 @@
 //PRIMER EJERCICIO
-let suma
-suma= (2+3)
+const sumar (numero1, numero2) => {
+    return (numero1) + (numero2)
+}
+
+let suma = sumar (2, 3)
 alert (suma)
 
 //SEXTO EJERCICIO
