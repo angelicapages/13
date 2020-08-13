@@ -1,5 +1,5 @@
 //PRIMER EJERCICIO
-const sumar (numero1, numero2) => {
+const sumar = (numero1, numero2) => {
     return (numero1) + (numero2)
 }
 
@@ -9,12 +9,12 @@ alert (suma)
 //SEXTO EJERCICIO
 let frase = prompt ("Escribe aquí una frase")
 
-let gritar= (comienza,termina) => {
-return alert (comienza + (frase) + termina) 
+const gritar = (fraseDelUsuario) => {
+return "¡" + (frase) + "!" 
 }
 
-gritar ("¡","!")
-let gritando = gritar
+let gritando = gritar (frase)
+alert (gritando) (frase)
 
 //SEPTIMO EJERCICIO
 let nombre = prompt ("Escribe aquí su nombre")
